@@ -121,7 +121,7 @@ impl ReceiveProgress {
         };
         let _ = write!(
             std::io::stderr(),
-            "\rBytes received: {}/{}   BPS:{}\x1b[K",
+            "\rBytes received: {}/{}   B/s:{}\x1b[K",
             position,
             self.total,
             bps

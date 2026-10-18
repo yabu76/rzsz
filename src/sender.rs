@@ -99,7 +99,7 @@ impl SendProgress {
         };
         let _ = write!(
             std::io::stderr(),
-            "\rBytes sent: {}   BPS:{}\x1b[K",
+            "\rBytes sent: {}   B/s:{}\x1b[K",
             self.displayed,
             bps
         );
