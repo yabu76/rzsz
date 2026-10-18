@@ -345,7 +345,7 @@ fn do_receive(program_name: &str, config: &ReceiverConfig) {
                 let names: Vec<String> = files.clone();
                 drop(out); drop(reader); guard.take();
                 if !config.quiet {
-                    for f in &names { eprintln!("received: {f}"); }
+                    for f in &names { eprintln!("\rreceived: {f}"); }
                 }
                 0
             }
